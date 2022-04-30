@@ -1,0 +1,64 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("FDKN", "BloodTheme")
+
+local Tab = Window:NewTab("Main")
+
+local Section = Tab:NewSection("Teleport")
+
+Section:NewButton("Teleport Push", "", function()
+    local plr = game:GetService('Players').LocalPlayer.Character
+plr.HumanoidRootPart.CFrame = CFrame.new(215.041428, 1.35291994, 234.001892, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+Section:NewButton("Teleport Tailes", "", function()
+local plr = game:GetService('Players').LocalPlayer.Character
+plr.HumanoidRootPart.CFrame = CFrame.new(121.679962, 1.44487798, 345.465057, -0.00439012051, 0, 0.999990404, 0, 1, 0, -0.999990404, 0, -0.00439012051)
+end)
+
+Section:NewButton("Teleport Cursed", "", function()
+local plr = game:GetService('Players').LocalPlayer.Character
+plr.HumanoidRootPart.CFrame = CFrame.new(-12.367219, 1.41139829, 273.853851, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("Teleport Wood Master", "", function()
+local plr = game:GetService('Players').LocalPlayer.Character
+plr.HumanoidRootPart.CFrame = CFrame.new(-12.367219, 1.41139829, 115.608955, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("Teleport Sand Lord", "", function()
+local plr = game:GetService('Players').LocalPlayer.Character
+plr.HumanoidRootPart.CFrame = CFrame.new(-12.367219, 1.41139829, -45.3099327, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("Teleport Dark flame", "", function()
+local plr = game:GetService('Players').LocalPlayer.Character
+plr.HumanoidRootPart.CFrame = CFrame.new(-12.367219, 1.41139829, -212.603851, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("Teleport Eternal", "", function()
+local plr = game:GetService('Players').LocalPlayer.Character
+plr.HumanoidRootPart.CFrame = CFrame.new(81.7487183, 1.41140211, -320.985474, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
+
+Section:NewButton("Teleport Rage", "", function()
+local plr = game:GetService('Players').LocalPlayer.Character
+plr.HumanoidRootPart.CFrame = CFrame.new(215.041428, 1.35291994, -251.80217, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+Section:NewButton("Teleport Sneak", "", function()
+local plr = game:GetService('Players').LocalPlayer.Character
+plr.HumanoidRootPart.CFrame = CFrame.new(215.041428, 1.35291994, -84.4420395, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+Section:NewButton("Teleport Death Eye", "", function()
+local plr = game:GetService('Players').LocalPlayer.Character
+plr.HumanoidRootPart.CFrame = CFrame.new(215.041428, 1.35291994, 76.251152, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+local Tab = Window:NewTab("Setting")
+
+local Section = Tab:NewSection("Keybinds")
+
+Section:NewKeybind("Keybind", "", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
+end)
